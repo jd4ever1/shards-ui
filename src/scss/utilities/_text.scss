@@ -2,6 +2,8 @@
 // Text utilities adjustments
 //
 
+@use "sass:color";
+
 .text-monospace { font-family: $font-family-monospace; }
 
 // Weight and italics

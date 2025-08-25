@@ -2,6 +2,8 @@
 // Base styles
 //
 
+@use "sass:color";
+
 .alert {
   padding: $alert-padding-y $alert-padding-x;
   margin-bottom: $alert-margin-bottom;

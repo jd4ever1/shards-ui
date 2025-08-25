@@ -1,5 +1,7 @@
 // stylelint-disable declaration-no-important
 
+@use "sass:color";
+
 // Typography
 
 @mixin text-emphasis-variant($parent, $color) {

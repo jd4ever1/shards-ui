@@ -2,6 +2,11 @@
 //
 // Utility mixins and functions for evalutating source code across our variables, maps, and mixins.
 
+@use "sass:math";
+@use "sass:meta";
+@use "sass:color";
+@use "sass:map";
+
 // Ascending
 // Used to evaluate Sass maps like our grid breakpoints.
 @mixin _assert-ascending($map, $map-name) {
@@ -10,7 +15,7 @@
   @each $key, $num in $map {
     @if $prev-num == null {
       // Do nothing
-    } @else if not comparable($prev-num, $num) {
+    } @else if not math.compatible($prev-num, $num) {
       @warn "Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !";
     } @else if $prev-num >= $num {
       @warn "Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value of the previous key '#{$prev-key}' !";
@@ -50,11 +55,11 @@
 
 // Color contrast
 @mixin color-yiq($color) {
-  $r: red($color);
-  $g: green($color);
-  $b: blue($color);
+  $r: color.channel($color, "red", $space: rgb);
+  $g: color.channel($color, "green", $space: rgb);
+  $b: color.channel($color, "blue", $space: rgb);
 
-  $yiq: (($r * 299) + ($g * 587) + ($b * 114)) / 1000;
+  $yiq: math.div(($r * 299) + ($g * 587) + ($b * 114), 1000);
 
   @if ($yiq >= 150) {
     color: color.adjust($color, $lightness: -65);
@@ -65,15 +70,15 @@
 
 // Retreive color Sass maps
 @function color($key: "blue") {
-  @return map-get($colors, $key);
+  @return map.get($colors, $key);
 }
 
 @function theme-color($key: "primary") {
-  @return map-get($theme-colors, $key);
+  @return map.get($theme-colors, $key);
 }
 
 @function grayscale($key: "100") {
-  @return map-get($grays, $key);
+  @return map.get($grays, $key);
 }
 
 // Request a theme color level

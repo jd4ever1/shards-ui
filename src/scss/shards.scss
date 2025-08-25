@@ -6,7 +6,25 @@
 
 // Bootstrap 4 dependencies
 @use "sass:color";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
 @import "bootstrap/scss/functions";
+
+// Override Bootstrap's color-yiq function to use the new color.channel function
+@function color-yiq($color) {
+  $r: color.channel($color, "red", $space: rgb);
+  $g: color.channel($color, "green", $space: rgb);
+  $b: color.channel($color, "blue", $space: rgb);
+
+  $yiq: math.div(($r * 299) + ($g * 587) + ($b * 114), 1000);
+
+  @if ($yiq >= 150) {
+    @return color.adjust($color, $lightness: -65);
+  } @else {
+    @return #fff;
+  }
+}
 
 // Core
 @import "mixins";

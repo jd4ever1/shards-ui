@@ -1,13 +1,14 @@
 // Custom datepickers
 
+@use "sass:color";
+
 .datepicker {
   border-radius: $datepicker-border-radius;
-
-	&-inline {
-		width: 220px;
-  }
-
   direction: ltr;
+
+  &-inline {
+    width: 220px;
+  }
 
 	&-rtl {
     direction: rtl;

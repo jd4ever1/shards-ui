@@ -1,5 +1,7 @@
 // Popover adjustments
 
+@use "sass:color";
+
 .popover {
   z-index: $zindex-popover;
   max-width: $popover-max-width;
