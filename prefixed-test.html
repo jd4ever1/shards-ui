@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Prefixed Shards CSS</title>
+    <link rel="stylesheet" href="dist/css/shards.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-section">
+        <h1 class="bs-h1">Heading 1</h1>
+        <h2 class="bs-h2">Heading 2</h2>
+        <h3 class="bs-h3">Heading 3</h3>
+        <p class="bs-lead">This is a lead paragraph.</p>
+        <p>This is a regular paragraph with <span class="bs-text-primary">primary colored text</span>.</p>
+    </div>
+
+    <div class="test-section">
+        <button class="bs-btn bs-btn-primary">Primary Button</button>
+        <button class="bs-btn bs-btn-secondary">Secondary Button</button>
+        <button class="bs-btn bs-btn-success">Success Button</button>
+    </div>
+
+    <div class="test-section">
+        <div class="bs-alert bs-alert-success">
+            <strong>Success!</strong> This is a success alert.
+        </div>
+        <div class="bs-alert bs-alert-warning">
+            <strong>Warning!</strong> This is a warning alert.
+        </div>
+    </div>
+
+    <div class="test-section">
+        <div class="bs-card" style="width: 18rem;">
+            <div class="bs-card-body">
+                <h5 class="bs-card-title">Card Title</h5>
+                <p class="bs-card-text">This is a sample card component using the prefixed Shards CSS.</p>
+                <a href="#" class="bs-btn bs-btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

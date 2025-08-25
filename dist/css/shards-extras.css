@@ -1,11 +1,11 @@
-.shards-landing-page--1 .welcome {
+.bs-shards-landing-page--1 .bs-welcome {
   position: relative;
   height: 100vh;
   min-height: 700px;
   background: url("../images/agency-landing/welcome-cover.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-.shards-landing-page--1 .welcome:before {
+.bs-shards-landing-page--1 .bs-welcome:before {
   position: absolute;
   z-index: 0;
   content: "";
@@ -17,19 +17,19 @@
   background: #007bff;
 }
 @media (max-width: 767.98px) {
-  .shards-landing-page--1 .welcome .inner-wrapper {
+  .bs-shards-landing-page--1 .bs-welcome .bs-inner-wrapper {
     text-align: center;
   }
 }
 @media (max-width: 400px) {
-  .shards-landing-page--1 .welcome .welcome-heading {
+  .bs-shards-landing-page--1 .bs-welcome .bs-welcome-heading {
     font-size: 2.415rem;
   }
 }
-.shards-landing-page--1 .section-title {
+.bs-shards-landing-page--1 .bs-section-title {
   position: relative;
 }
-.shards-landing-page--1 .section-title:after {
+.bs-shards-landing-page--1 .bs-section-title:after {
   content: "";
   width: 30px;
   height: 2px;
@@ -39,7 +39,7 @@
   margin-left: -15px;
   bottom: -20px;
 }
-.shards-landing-page--1 .feature .icon {
+.bs-shards-landing-page--1 .bs-feature .bs-icon {
   border-radius: 50%;
   min-width: 65px;
   height: 65px;
@@ -48,25 +48,25 @@
   box-shadow: 0 2px 4px rgba(33, 37, 41, 0.1), 0 7px 14px rgba(33, 37, 41, 0.1);
   font-size: 27px;
 }
-.shards-landing-page--1 .section {
+.bs-shards-landing-page--1 .bs-section {
   border-bottom: 1px solid rgb(176.9769230769, 182.1784615385, 188.1230769231);
 }
-.shards-landing-page--1 .section-invert {
+.bs-shards-landing-page--1 .bs-section-invert {
   background: #f9fafc;
 }
-.shards-landing-page--1 .testimonials .avatar {
+.bs-shards-landing-page--1 .bs-testimonials .bs-avatar {
   max-width: 80px;
   overflow: hidden;
 }
 
-.shards-app-promo-page--1 .welcome {
+.bs-shards-app-promo-page--1 .bs-welcome {
   position: relative;
   height: 100vh;
   min-height: 700px;
   background: url("../images/app-promo/welcome-cover.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-.shards-app-promo-page--1 .welcome:before {
+.bs-shards-app-promo-page--1 .bs-welcome:before {
   position: absolute;
   z-index: 0;
   content: "";
@@ -78,34 +78,34 @@
   background: #212529;
 }
 @media (max-width: 991.98px) {
-  .shards-app-promo-page--1 .welcome {
+  .bs-shards-app-promo-page--1 .bs-welcome {
     height: auto;
   }
-  .shards-app-promo-page--1 .welcome .header-social-icons {
+  .bs-shards-app-promo-page--1 .bs-welcome .bs-header-social-icons {
     display: none;
   }
 }
 @media (max-width: 767.98px) {
-  .shards-app-promo-page--1 .welcome {
+  .bs-shards-app-promo-page--1 .bs-welcome {
     height: auto;
   }
-  .shards-app-promo-page--1 .welcome .inner-wrapper {
+  .bs-shards-app-promo-page--1 .bs-welcome .bs-inner-wrapper {
     padding-top: 4.5rem;
     text-align: center;
   }
 }
 @media (max-width: 400px) {
-  .shards-app-promo-page--1 .welcome .welcome-heading {
+  .bs-shards-app-promo-page--1 .bs-welcome .bs-welcome-heading {
     font-size: 2.415rem;
   }
 }
-.shards-app-promo-page--1 .welcome .iphone-mockup {
+.bs-shards-app-promo-page--1 .bs-welcome .bs-iphone-mockup {
   max-width: 85%;
 }
-.shards-app-promo-page--1 .section-title {
+.bs-shards-app-promo-page--1 .bs-section-title {
   position: relative;
 }
-.shards-app-promo-page--1 .section-title:after {
+.bs-shards-app-promo-page--1 .bs-section-title:after {
   content: "";
   width: 30px;
   height: 2px;
@@ -115,15 +115,15 @@
   margin-left: -15px;
   bottom: -20px;
 }
-.shards-app-promo-page--1 .section-title.underline--left:after {
+.bs-shards-app-promo-page--1 .bs-section-title.bs-underline--left:after {
   left: 0;
   margin-left: 0;
 }
-.shards-app-promo-page--1 .app-screenshot {
+.bs-shards-app-promo-page--1 .bs-app-screenshot {
   background: url("../images/app-promo/features-background.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-.shards-app-promo-page--1 .app-screenshot:before {
+.bs-shards-app-promo-page--1 .bs-app-screenshot:before {
   content: "";
   position: absolute;
   top: 0;
@@ -133,7 +133,7 @@
   background: #e9ecef;
   opacity: 0.6;
 }
-.shards-app-promo-page--1 .app-screenshot img {
+.bs-shards-app-promo-page--1 .bs-app-screenshot img {
   max-width: 300px;
   position: absolute;
   z-index: 1;
@@ -144,7 +144,7 @@
   box-shadow: 0 13px 25px rgba(0, 0, 0, 0.05), 0 60px 100px rgba(192, 192, 192, 0.5);
 }
 @media (max-width: 991.98px) {
-  .shards-app-promo-page--1 .app-screenshot img {
+  .bs-shards-app-promo-page--1 .bs-app-screenshot img {
     display: table;
     position: static;
     -webkit-transform: translate(0);
@@ -152,7 +152,7 @@
     margin: 0 auto;
   }
 }
-.shards-app-promo-page--1 .feature .icon {
+.bs-shards-app-promo-page--1 .bs-feature .bs-icon {
   border-radius: 50%;
   min-width: 65px;
   height: 65px;
@@ -162,25 +162,25 @@
   font-size: 27px;
 }
 @media (max-width: 767.98px) {
-  .shards-app-promo-page--1 .feature .icon {
+  .bs-shards-app-promo-page--1 .bs-feature .bs-icon {
     margin-right: 1.5rem !important;
   }
 }
-.shards-app-promo-page--1 .blog .card-img-top {
+.bs-shards-app-promo-page--1 .bs-blog .bs-card-img-top {
   height: 100%;
 }
-.shards-app-promo-page--1 .section {
+.bs-shards-app-promo-page--1 .bs-section {
   border-bottom: 1px solid rgb(176.9769230769, 182.1784615385, 188.1230769231);
 }
-.shards-app-promo-page--1 .section-invert {
+.bs-shards-app-promo-page--1 .bs-section-invert {
   background: #f9fafc;
 }
-.shards-app-promo-page--1 .testimonials .avatar {
+.bs-shards-app-promo-page--1 .bs-testimonials .bs-avatar {
   max-width: 80px;
   overflow: hidden;
 }
 @media (max-width: 767.98px) {
-  .shards-app-promo-page--1 .subscribe input, .shards-app-promo-page--1 .subscribe button {
+  .bs-shards-app-promo-page--1 .bs-subscribe input, .bs-shards-app-promo-page--1 .bs-subscribe button {
     width: 100%;
   }
 }
