@@ -1,4 +1,5 @@
 // Forms mixins
+@use "sass:color";
 
 // Form control focus state
 @mixin form-control-focus() {
@@ -64,14 +65,14 @@
         color: $color;
 
         &::before {
-          background-color: lighten($color, 20%);
-          border-color: lighten($color, 10);
+          background-color: color.scale($color, $lightness: 20%);
+          border-color: color.scale($color, $lightness: 10%);
         }
       }
 
       &:checked {
         ~ .custom-control-label::before {
-          @include gradient-bg(lighten($color, 10%));
+          @include gradient-bg(color.scale($color, $lightness: 10%));
         }
       }
 
@@ -92,8 +93,8 @@
         border-color: $color;
 
         &::after {
-          background-color: lighten($color, 40);
-          border-color: lighten($color, 10);
+          background-color: color.scale($color, $lightness: 40%);
+          border-color: color.scale($color, $lightness: 10%);
           color: $color;
         }
       }
